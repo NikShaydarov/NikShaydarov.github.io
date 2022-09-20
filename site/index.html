@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <title>Лаба</title>
+    <link rel="stylesheet" href="style.css">
+   <link href="style.css" rel="stylesheet" type="text/css" charset="UTF-8"></script></head>
+<body>
+    <header>
+        <div id="shapka">
+            <img class="gifka" src="https://i.gifer.com/XwIB.gif" alt="Error">
+            <h1>Сайт</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="#spisok">Список</a>   <a href="#table">Табрица</a>
+        <a href="#forma">Форма</a>
+    </nav>
+    <main class="block">
+        <h2 id="spisok">Ссылки</h2>
+        <ol>
+            <li><a href="http://example.com/">example</a></li>
+ <li><a href="https://example.com/">example</a></li>
+ <li><a href="ftp://example.com/Temp/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
+ <li><a href="ftp://User017200:password123example.com/file2.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
+<li><a href="https://www.apple.com/#:~:text=Apple%20Watch%20required">Cсылка на фрагмент страницы некоторого сайта</a></li>
+  <li><a href="#f1">Ссылка на фрагмент текущей страницы</a></li>
+  <li><a href="https://market.yandex.ru/search?cvredirect=2&text=car&local-offers-first=0">ссылка с двумя параметрами в URL;</a></li>
+ <li><a href="#one"title="Ссылка первая">Первая с title</a><a href="#two"title="Ссылка вторая">Вторая с title</a><a href="three"title="Ссылка третья">Третья с title</a></li>
+  <li><a>ссылка без href;</a></li>
+  <li><a href="">ссылка с пустым href</a></li>
+  <li><a href="https://example.com/" rel="nofollow">ссылка, по которой запрещен переход поисковикам;</a></li>
+ <!--noindex--><li><a href="https://example.com/">запрещенную для индексации поисковиками;</a></li><!--noindex-->
+ <li><p>Asdfazazazas sdfwfaf<a href="https://www.apple.com/ru/">контекстную в тексте абзаца</a>azazazazazaza zazazazaza</p></li>
+<li><a href="2.html">относительная на страницу в текущем каталоге</a></li>
+<li><a href="./about/2.html">относительная на страницу в каталоге about;</a></li>
+<li><a href="./">относительная на страницу в каталоге уровнем выше текущего;</a></li>
+<li><a href="../">относительная на страницу в каталоге двумя уровнями выше;</a></li>
+<li><a href="/">сокращенную на главную;</a></li>
+<li><a href="/чекбокс">сокращенную ссылку на внутреннюю.</a></li>
+        </ol>
+    </main>
+    <section class="block">
+        <h3 id="table">Расписание ПИ-28/2</h3>
+        <table border="1" cellspacing="0">
+            <tbody>
+					<tr>
+					<th>Понедельник</th>
+					<th>Вторник</th>
+					<th>Среда</th>
+					<th>Четверг</th>
+					<th>Пятница</th>
+					</tr>
+					
+					<tr>
+					<td rowspan="2">1)-</td>
+					<td>1)Разработка пользовательского WEB интерфейса лекция</td>
+					<td colspan="2">1)-</td>
+					<td>1)Математический анализ лекция</td>
+					</tr>
+					
+					<tr>
+					<td>2)Разработка пользовательского WEB интерфейса лаб</td>
+					<td>2)Дифференциальные уравнения лекция</td>
+					<td>2)-</td>
+					<td>2)Бухгалтерский учет лекция</td>
+					</tr>
+					
+					<tr>
+					<td>3)Английский язык лаб</td>
+					<td>3)Математический анализ лаб</td>
+					<td>3)Объектно-ориентированное программирование лекция</td>
+					<td>3)Дискретные математические системы лекция</td>
+					<td>3)И самый лучший предмет в мире физкультура &#129392 &#128525 &#128151 </td>
+					</tr>
+					
+					<tr>
+					<td>4)Объектно-ориентированное программирование лаб</td>
+					<td>4)Дифференциальные уравнения лаб</td>
+					<td>4)Дискретные математические системы лаб</td>
+					<td>4)Математический анализ лаб</td>
+					<td>4)-</td>
+					</tr>
+					
+					
+		
+            </tbody>
+        </table>
+
+    </section>
+    <section class="block">
+        <h3 id="forma">ФОРМА</h3>
+        <form action="/"
+              method="POST">
+            <label>
+                Введите ваше имя:<br />
+                <input name="field-name"
+                       placeholder="Имя" />
+            </label><br />
+            <label>
+                Email:<br />
+                <input name="field-email"
+                       type="email"
+                       placeholder="Введите вашу почту" />
+            </label><br />
+            <label>
+                Ваша дата рождения:<br />
+                <input name="field-date"
+                       value="2022-09-01"
+                       type="date" />
+            </label><br />
+            Ваш пол:<br />
+            <label>
+                <input type="radio" checked="checked"
+                       name="pol" value="Значение1" />
+                м
+            </label>
+            <label>
+                <input type="radio"
+                       name="pol" value="Значение2" />
+                ж
+            </label><br />
+            Колличество конечностей:<br />
+            <label>
+                <input type="radio" checked="checked"
+                       name="kon" />Увы, но их нету
+            </label>
+            <label>
+                <input type="radio"
+                       name="kon" />2
+            </label>
+            <label>
+                <input type="radio"
+                       name="kon" />4
+            </label>
+            <label>
+                <input type="radio"
+                       name="kon" />6
+            </label><br />
+            Ваши суперспособности:
+            <br />
+            <select name="superpowers"
+                    multiple="multiple">
+                <option value="Значение1">бессмертие</option>
+                <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+                <option value="Значение3" selected="selected">левитация</option>
+            </select>
+            <label>
+            </label><br />
+            <label>
+                Биография:<br />
+                <textarea name="field-name-2"></textarea>
+            </label><br />
+            <label>
+                С контрактом ознакомлен(а)<input type="checkbox" name="check-1" />
+            </label>
+            <br /><br>
+            <input type="submit" value="Отправить" />
+        </form>
+    </section>
+    <footer id="foot">
+        <div>
+                 Я старался &#129402
+        </div>
+    </footer>
+</body>
+</html> 
