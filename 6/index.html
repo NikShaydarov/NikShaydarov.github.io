@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <link rel="stylesheet"
+          href="style.css">
+    <title> JavaScript </title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+
+    <h5> Выберите товар: </h5>
+    <select id="tovar_select">
+        <option value="CPU" data-price="14990">
+            Процессор
+        </option>
+        <option value="antivirus2" data-price="1490">
+            Антивирус 
+        </option>
+        <option value="operating system" data-price="9900">
+            Операционная система-Windows 10
+        </option>
+    </select>
+    <div hidden id="antivurus">
+        <h5> Какой антивирус? </h5>
+        <span> Dr.Web </span> <input data-addprice="0" type="radio" id="antivurus_1" name="bread_type" checked>
+        <span> Kaspersky </span> <input data-addprice="500" type="radio" id="antivurus_2" name="bread_type">
+    </div>
+    <div hidden id="windows_10">
+        <h5> Нужна ли установка на ПК? </h5>
+        <span> Да </span> <input data-addprice="1990" type="checkbox" id="windows_10_1">
+    </div>
+    <h5> Количество товара: </h5>
+    <input type="text" id="sum">
+    <h5 id="answer"> Загрузка <a href="https://emoji.gg/emoji/3339_loading"><img src="https://cdn3.emoji.gg/emojis/3339_loading.gif" width="34px" height="34px" alt="loading"></a> </h5>
+</body>
+</html>
