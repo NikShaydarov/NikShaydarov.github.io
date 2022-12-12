@@ -1,102 +1,84 @@
-function hide_all() {
-    var antivurus = document.getElementById("antivurus");
-    var windows_10 = document.getElementById("windows_10");
+window.addEventListener('DOMContentLoaded', function (event) {
+  const PRICE_1 = 500;
+  const PRICE_2 = 1000;
+  const PRICE_3 = 2000;
+  const EXTRA_PRICE = 10000;
+  const RADIO_1 = 100;
+  const RADIO_2 = 150;
+  const RADIO_3 = 200;
+  const CHECKBOX = 3000;
+  let price = PRICE_1;
+  let extraPrice = EXTRA_PRICE;
+  let radios = document.getElementById("myradios"); 
+  let s = document.getElementsByName("myselect");
+  let checks = document.getElementById("mycheck");
+  let r = document.querySelectorAll(".pis input[type=radio]");
+  let checkbox = document.getElementById("check");
+  let result = document.getElementById("result");
+  let count = document.getElementsByName("count");
+  let calc = document.getElementById("calc");
+  
+  s[0].addEventListener("change", function(event) {
+    let select = event.target;
+    
+    if (select.value === "1") {
+      radios.classList.add("d-none");
+      checks.classList.add("d-none");
+      extraPrice = EXTRA_PRICE;
+      price = PRICE_1;
 
-    antivurus.hidden = true;
-    windows_10.hidden = true;
-}
-
-function antivurus_as() {
-    var antivurus = document.getElementById("antivurus");
-    var antivurus_1 = document.getElementById("antivurus_1");
-    var antivurus_2 = document.getElementById("antivurus_2");
-    var add_price = 0;
-
-    antivurus.hidden = false;
-
-    if (antivurus_1.checked) {
-        add_price = antivurus_1.dataset.addprice;
     }
-    if (antivurus_2.checked) {
-        add_price = antivurus_2.dataset.addprice;
+    if(select.value === "2") {
+      radios.classList.remove("d-none");
+      checks.classList.add("d-none");
+      document.getElementById("radio1").checked = true;
+      extraPrice = EXTRA_PRICE;
+      price = PRICE_2;
     }
-    return add_price;
-}
-
-function windows() {
-    var windows_10 = document.getElementById("windows_10");
-    var windows_10_1 = document.getElementById("windows_10_1");
-
-    windows_10.hidden = false;
-    if (windows_10_1.checked) {
-        return windows_10_1.dataset.addprice;
-    } else {
-        return 0;
+    if(select.value === "3"){
+      radios.classList.add("d-none");
+      checks.classList.remove("d-none");
+      extraPrice = EXTRA_PRICE;
+      price = PRICE_3;
+      document.getElementById("check").checked = false;
     }
-}
+  });
 
-function changes(price, add_price) {
-    var sum = document.getElementById("sum");
-    var answer = document.getElementById("answer");
+r.forEach(function (currentRadio) {
+    currentRadio.addEventListener("change", function (event) {      
+        let r = event.target;
+        if (r.value === "r1") {      
+            extraPrice = RADIO_1;
+            console.log(r.value);
+        }
+        if (r.value === "r2") {
+            extraPrice = RADIO_2;
+            console.log(r.value);
+        }
+        if (r.value === "r3") {
+            extraPrice = RADIO_3;
+            console.log(r.value);
+        }
+    });
+});
 
-    var check_is_number = /^[0-9]+$/;
-    var problem = "Неправильный формат ввода! Вводить только цифры!";
+checkbox.addEventListener("change", function () {
+  if (checkbox.checked) {
+      extraPrice = CHECKBOX;
+  } else {
+      extraPrice = EXTRA_PRICE;
+  }
+});
 
-    var check1 = check_is_number.test(sum.value);
-    var check2 = check_is_number.test(price);
-    var check3 = check_is_number.test(add_price);
+calc.addEventListener("change", function () {
+  let toCount = count[0].value;
+  let flag1488 = toCount.match(/^\d+$/);
+  if(flag1488 !== null){
+    result.innerHTML=(price + extraPrice)*parseInt(count[0].value);
+  }
+  else{
+      result.innerHTML = "Введите число в поле - количество !";
+  }
 
-    var ans = 0;
-    var a;
-    var s;
-    var d;
-
-    if (check1 && check2 && check3) {
-        a = Number(price);
-        s = Number(add_price);
-        d = Number(sum.value);
-        ans = ((a + s) * d);
-        answer.innerText = "Ответ: " + ans;
-    } else {
-        answer.innerText = problem;
-    }
-}
-
-
-function changed() {
-    var tovar_select = document.getElementById("tovar_select");
-    var selected = tovar_select.options[tovar_select.selectedIndex];
-    hide_all();
-
-    switch (tovar_select.value) {
-        case "antivurus":
-            changes(selected.dataset.price, antivurus_as());
-        break;
-    case "windows":
-            changes(selected.dataset.price, windows());
-        break;
-    case "CPU":
-            changes(selected.dataset.price, 0);
-        break;
-    }
-}
-
-function changed_amount() {
-    changed();
-}
-
-function main() {
-    var sum = document.getElementById("sum");
-    var tovar_select = document.getElementById("tovar_select");
-    var antivurus_1 = document.getElementById("antivurus_1");
-    var antivurus_2 = document.getElementById("antivurus_2");
-    var windows_10 = document.getElementById("windows_10");
-
-    sum.addEventListener("keyup", changed_amount);
-    tovar_select.addEventListener("change", changed);
-    antivurus_1.addEventListener("change", changed);
-    antivurus_2.addEventListener("change", changed);
-    windows_10.addEventListener("change", changed);
-}
-
-document.addEventListener("DOMContentLoaded", main);
+});
+});
