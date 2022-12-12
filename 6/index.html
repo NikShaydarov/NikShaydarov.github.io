@@ -1,37 +1,56 @@
 <!DOCTYPE html>
-<html lang="RU">
 <head>
-    <link rel="stylesheet"
-          href="style.css">
-    <title> JavaScript </title>
-    <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script defer src="6.js"></script> 
+    <title>Лабораторная 6</title>
 </head>
-<body>
+<body style="background-color: purple">
+    <div class="body">
+        <div id="calc">
+            <form class="container row">
+                <div class="form-group">
+                    <label>Калькулятор стоимости</label>
 
+                        <select name="myselect" class="form-control">
+                            <option value="1" selected>Skyrim</option>
+                            <option value="2">Skyrim SE</option>
+                            <option value="3">Skyrim Anniversary Edition</option>
+                        </select> 
 
-    <h5> Выберите товар: </h5>
-    <select id="tovar_select">
-        <option value="CPU" data-price="14990">
-            Процессор
-        </option>
-        <option value="antivirus2" data-price="1490">
-            Антивирус 
-        </option>
-        <option value="operating system" data-price="9900">
-            Операционная система-Windows 10
-        </option>
-    </select>
-    <div hidden id="antivurus">
-        <h5> Какой антивирус? </h5>
-        <span> Dr.Web </span> <input data-addprice="0" type="radio" id="antivurus_1" name="bread_type" checked>
-        <span> Kaspersky </span> <input data-addprice="500" type="radio" id="antivurus_2" name="bread_type">
+                        <div class="pis d-none" id="myradios">
+
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="radio1" name="myradio" value="r1" checked>
+                                <label class="custom-control-label" for="radio1">с Downguard</label>
+                            </div>
+                            
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="radio2" name="myradio" value="r2">
+                                <label class="custom-control-label" for="radio2">С Dragonborn</label>
+                            </div>
+                            
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="radio3" name="myradio" value="r3">
+                                <label class="custom-control-label" for="radio3">С обеими</label>
+                            </div>
+                    
+                        </div>
+                        <div id="mycheck" class="d-none">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check" name="mycheck">
+                                <label class="custom-control-label" for="check">Hearthfire</label>
+                            </div>
+                        </div>
+                    <input name="count" type="text" class="form-control" id="count" placeholder="Сколько">         
+                </div>
+              
+            </form>   
+            С вас столько шекелей: 
+        <div class="result" id="result"></div>
+     </div> 
     </div>
-    <div hidden id="windows_10">
-        <h5> Нужна ли установка на ПК? </h5>
-        <span> Да </span> <input data-addprice="1990" type="checkbox" id="windows_10_1">
-    </div>
-    <h5> Количество товара: </h5>
-    <input type="text" id="sum">
-    <h5 id="answer"> Загрузка <a href="https://emoji.gg/emoji/3339_loading"><img src="https://cdn3.emoji.gg/emojis/3339_loading.gif" width="34px" height="34px" alt="loading"></a> </h5>
 </body>
-</html>
+</html> 
