@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Times New Roman", bold; 
+}
+    
+.body{
+    font-family: "Times New Roman", bold;  
+    color:cyan;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  form{
+      font-size: 24px; 
+  }
+  #calculateResult{
+      margin-top: 10px;
+  }
+  #count{
+      margin-top: 10px;
+  }

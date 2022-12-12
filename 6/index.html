@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script defer src="6.js"></script> 
+    <title>Лабораторная 6</title>
+</head>
+<body style="background-color: purple">
+    <div class="body">
+        <div id="calc">
+            <form class="container row">
+                <div class="form-group">
+                    <label>Калькулятор стоимости</label>
+
+                        <select name="myselect" class="form-control">
+                            <option value="1" selected>Skyrim</option>
+                            <option value="2">Skyrim SE</option>
+                            <option value="3">Skyrim Anniversary Edition</option>
+                        </select> 
+
+                        <div class="pis d-none" id="myradios">
+
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="radio1" name="myradio" value="r1" checked>
+                                <label class="custom-control-label" for="radio1">с Downguard</label>
+                            </div>
+                            
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="radio2" name="myradio" value="r2">
+                                <label class="custom-control-label" for="radio2">С Dragonborn</label>
+                            </div>
+                            
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="radio3" name="myradio" value="r3">
+                                <label class="custom-control-label" for="radio3">С обеими</label>
+                            </div>
+                    
+                        </div>
+                        <div id="mycheck" class="d-none">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check" name="mycheck">
+                                <label class="custom-control-label" for="check">Hearthfire</label>
+                            </div>
+                        </div>
+                    <input name="count" type="text" class="form-control" id="count" placeholder="Сколько">         
+                </div>
+              
+            </form>   
+            С вас столько шекелей: 
+        <div class="result" id="result"></div>
+     </div> 
+    </div>
+</body>
+</html> 
