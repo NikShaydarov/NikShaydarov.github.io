@@ -1,0 +1,48 @@
+#link_1, #link_2, #link_3 {
+    background-color: #c7ca1d;
+    font-family: fantasy;
+}
+
+#bf_list, #content table, #superform {
+    background-color: #a0a0a0;
+    font-family: cursive;
+}
+
+header main, header aside {
+    background-color: #ce0303;
+    font-family: fantasy;
+    vertical-align: middle;
+    height: 100%;
+}
+
+table td, th {
+    border: 1px solid rgb(192, 1, 1);
+}
+
+table {
+    width: 100%;
+}
+
+table_odd {
+    background-color: #fff0f5;
+}
+
+table_even {
+    background-color: #37B0BD;
+}
+
+body footer {
+    background-color: #ede13d;
+}
+
+#mainer 
+{
+	background-color:  #3B0101;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 15px;
+	max-width: 960px;
+	border-bottom: 5px solid black;
+	
+}
