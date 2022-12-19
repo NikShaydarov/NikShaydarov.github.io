@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="start">Заполнение анкеты</div>
+  <div id="popupwrapper">
+    <div id="popup">
+      <div id="exit"></div>
+      <div class="popuptitle">Анкета</div>
+      <form id="my-form" accept-charset="UTF-8" >
+        <div>
+          <span class="titlefield">Введите имя</span><br>
+          <input class="field" type="text" name="name" placeholder="Имя" required><br>
+        </div>
+        <div>
+          <span class="titlefield">Введите почту</span><br>
+          <input class="field" type="email" name="email" placeholder="Почта" required><br>
+        </div>
+        <div>
+          <span class="titlefield">Введите сообщение</span><br>
+          <textarea placeholder="Сообщение" name="message"></textarea><br>
+        </div>
+        <div>
+          <span class="titlefield">Согласие с политикой обработки персональных данных</span>
+          <input type="checkbox" name="agree" required>
+        </div>
+        <div>
+          <input id="submit" type="submit">
+        </div>
+
+      </form>
+    </div>
+  
+  </div>
+  <script src="https://carrier.formcarry.com/js/v1.js"></script>
+  <script src="./myscript.js"></script>
+</body>
+
+</html>
