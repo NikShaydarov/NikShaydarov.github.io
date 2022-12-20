@@ -1,0 +1,216 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 23px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  padding: 10px 0;
+  font-size: 23px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Хедр */
+
+.header {
+  background-color: rgb(252, 129, 58);
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px;
+}
+.backGr{
+  background-color: rgb(31, 22, 22);
+  width: 100%;
+  display: flex;
+}
+
+.logo__img {
+  margin-right: 50px;
+}
+
+/* Навигация */
+.nav {
+  margin-top: 20px;
+  background-color: rgb(252, 129, 58);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Ссылки */
+
+.hyperlinks {
+  order: 1;
+  margin-top: 20px;
+}
+
+.hyperlinks__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  background-color: rgb(252, 129, 58);
+}
+
+.hyperlinks__list {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.hyperlinks__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.hyperlinks__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.hyperlinks__image {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* Стили таблицы */
+
+.table {
+  order: 2;
+}
+
+.table__inner {
+  text-decoration: none;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.table__title {
+  display: flex;
+  justify-content: center;
+}
+
+.table__tr:nth-child(even) {
+  background-color: rgb(255, 0, 149);
+}
+
+.table__td {
+  padding: 10px 2px;
+  font-size: 10px;
+  color: #000000;
+  line-height: 13px;
+  border: 1px solid #000000;
+}
+
+/* Форма */
+
+.contacts {
+  order: 3;
+  margin-top: 20px;
+}
+
+.contacts__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(80, 47, 172);
+}
+
+.contacts__form {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.contacts__input {
+  width: 200px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.contacts__btn {
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.form__text {
+  margin-bottom: 10px;
+}
+
+.form__area {
+  width: 300px;
+  height: 150px;
+  resize: none;
+}
+
+/* Подвал */
+
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(80, 47, 172);
+}
+
+.footer__copy {
+  padding: 40px 0 40px;
+}
+
+
+
+@media (max-width: 420px){
+  .nav__list{
+    flex-direction: column;
+    justify-content: start;
+  }
+  .table{
+    order: 3;
+  }
+  .contacts{
+    order: 2;
+  }
+}
