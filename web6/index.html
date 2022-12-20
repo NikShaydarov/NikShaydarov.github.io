@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6 задание</title>
+  </head>
+  <body>
+    <h1 class="title">Калькулятор стоимости</h1>
+    <form class="form">
+      <h2 id="price" class="start-price"></h2>
+      <p>Количество товара:</p>
+      <input value="1" id="quantity" type="text" />
+      <h2 class="subtitle">Тип товара:</h2>
+      <select class="form__select" name="type" id="select">
+        <option value="1" name="prod1" id="firstProduct">Товар 1</option>
+        <option value="2" name="prod2" id="secondProduct">Товар 2</option>
+        <option value="3" name="prod3" id="threeProduct">Товар 3</option>
+      </select>
+      <div class="form__radios" id="radios">
+        <input type="radio" name="radio" id="hiddenR" />
+        <input type="radio" name="radio" value="option1" /> Опция 1
+        <input type="radio" name="radio" value="option2" /> Опция 2
+        <input type="radio" name="radio" value="option3" /> Опция 3
+      </div>
+      <div class="form__checkboxes" id="checkboxes">
+        <input type="checkbox" name="prop1" id="check1" /> Свойство 1
+        <input type="checkbox" name="prop2" id="check2" /> Свойство 2
+      </div>
+      <br />
+    </form>
+    <button onclick="updatePrice();">Рассчитать стоимость</button>
+    <script src="main.js"></script>
+  </body>
+</html>
