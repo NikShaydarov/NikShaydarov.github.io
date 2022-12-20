@@ -1,0 +1,31 @@
+@media(min-width: 850px) {
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0px;
+        padding: 10px;
+      }
+
+      .nav {
+        margin-top: 20px;
+        background-color: rgb(0, 174, 255);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .hyperlinks__inner {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 40px;
+        background-color: rgb(0, 174, 255);
+     }
+     
+     .table {
+         order: 1;
+     }
+
+     .contacts {
+         order: 2;
+     }
+  }

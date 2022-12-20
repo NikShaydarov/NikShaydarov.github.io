@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>3 Задание WEB</title>
+  </head>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+        </div class ="backGr">
+          <a class="header__logo" href="#">                    <!--w250  h190-->
+            <img class="nis__img" src="wq2.jpg" alt="nis" width="250" height="190"/>
+          </a>
+          <h1 class="header__title title">----------Ваааай,што ЭТООО----------</h1>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Ссылки меню:</a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="#hyperlinks"
+              title="список ссылок основной навигации сайта с подписями title"
+              >Список ссылок</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts" title="Форма">Форма</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="hyperlinks">
+        <div class="container">
+          <div class="hyperlinks__inner">
+            <h2 id="hyperlinks" class="hyperlinks__title title">
+              Список гиперссылок:
+            </h2>
+            <ol class="hyperlinks__list">
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="http://example.com"
+                  >Абсолютная гиперссылка на главную страницу сайта</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="https://example.com"
+                  >Абсолютная гиперссылка на главную страницу сайта в протоколе
+                  https</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a
+                  class="hyperlinks__link"
+                  href="ftp://example.com/files/index.html"
+                  >Ссылка на файл на сервере FTP без авторизации</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a
+                  class="hyperlinks__link"
+                  href="ftp://user:pass123@example.com/files/index.html"
+                  >Ссылка на файл на сервере FTP с авторизацией</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a
+                  class="hyperlinks__link"
+                  id="fragment"
+                  href="https://kubsu.ru/#main-content"
+                  >Ссылка на фрагмент страницы некоторого сайта</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="#fragment"
+                  >Ссылка на фрагмент текущей страницы</a
+                >
+              </li>
+              </li>
+              <li class="hyperlinks__item"><a>Ссылка без href</a></li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="">Ссылка с пустым href</a>
+              </li>
+              </li>
+              <li class="hyperlinks__item">
+                <a
+                  class="hyperlinks__link"
+                  href="https://kubsu.ru"
+                  rel="nofollow"
+                  >Ссылка, запрещенная для индексации поисковиками</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <p>
+                  Контекстная <a href="https://kubsu.ru"></a>ссылка в тексте
+                  абзаца
+                </p>
+              </li>
+              <li class="hyperlinks__item">
+                Ссылка-изображение<br />
+                <a class="hyperlinks__link" href="https://kubsu.ru">
+                  <img
+                    class="hyperlinks__image"
+                    src="https://cdn.eyeem.com/thumb/9ec77ec715c29bf2f21ce06301e0b86219aeb0e5-1472293823948/640/480"
+                    alt="изображение 1"
+                  />
+                </a>
+              </li>
+              <li class="hyperlinks__item">
+                Ссылки из прямоугольных и круглых областей картинки<br />
+                <img
+                  class="hyperlinks__image"
+                  src="https://stihi.ru/pics/2011/09/11/5828.jpg"
+                  alt="изображение 2"
+                  usemap="#map"
+                />
+                <map name="map">
+                  <area
+                    shape="rect"
+                    coords="40,25,90,150"
+                    href="https://kubsu.ru"
+                    alt="Прямоугольная область"
+                  />
+                  <area
+                    shape="circle"
+                    coords="145,190,60"
+                    href="https://kubsu.ru"
+                    alt="Круглая область"
+                  />
+                </map>
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="page"
+                  >Относительная ссылка на страницу в текущем каталоге</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="./about/page"
+                  >Относительная ссылка на страницу в каталоге about</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="../page"
+                  >Относительная ссылка на страницу в каталоге уровнем выше
+                  текущего</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="../../page"
+                  >Относительная ссылка на страницу в каталоге двумя уровнями
+                  выше текущего</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="/"
+                  >Сокращенная ссылка на главную</a
+                >
+              </li>
+              <li class="hyperlinks__item">
+                <a class="hyperlinks__link" href="/pages/page"
+                  >Сокращенная ссылка на внутреннюю</a
+                >
+
+
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+ 
+      <section class="table">
+        <div class="container">
+          <h2 class="table__title title">Расписание 28/2</h2>
+          <table class="table__inner">
+            <tbody class="table__tbody">
+              <tr class="table__tr">
+                <td class="table__td">Понедельник</td>
+                <td class="table__td" colspan="2">Вторник</td>
+                <td class="table__td" colspan="2">Среда</td>
+              </tr>
+              <tr class="table__tr">
+                <td class="table__td" colspan="2">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+              </tr>
+              <tr class="table__tr">
+                <td class="table__td" colspan="2"> Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+              </tr>
+              <tr class="table__tr">
+                <td class="table__td" colspan="2"> Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+              </tr>
+              <tr class="table__tr">
+                <td class="table__td" colspan="2">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+              </tr>
+              <tr class="table__tr">
+                <td class="table__td" colspan="2"> Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+                <td class="table__td">Предмет X</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <form
+              class="contacts__form"
+              action="http://example.com"
+              method="POST"
+            >
+              <h2 class="contacts__title title">Форма</h2>
+
+              <input class="contacts__input" type="text" placeholder="Name" />
+              <input class="contacts__input" type="email" placeholder="Mail" />
+
+              <p class="form__text">Дата рождения:</p>
+              <input class="contacts__input" type="date" />
+
+              <p class="form__text">Количество конечностей:</p>
+              <input type="radio" name="radio-group-1" value="1" />
+              1
+              <input type="radio" name="radio-group-1" value="2" />
+              2
+              <input type="radio" name="radio-group-1" value="3" />
+              3
+              <input type="radio" name="radio-group-1" value="4" />
+              4
+              <input type="radio" name="radio-group-1" value="5" />
+              5
+              <p class="form__text">Биография:</p>
+              <textarea class="form__area" name="bio">О себе</textarea>
+
+              <p class="form__text">С правилами ознакомлен(а):</p>
+              <input type="checkbox" checked="checked" name="check-1" />
+
+              <input class="contacts__btn" type="submit" value="Отправить" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copy">(c) Вакуленко Валерий Вячеславович 2022</div>
+      </div>
+    </footer>
+  </body>
