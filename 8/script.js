@@ -56,7 +56,7 @@ function main(){
                 data: $(this).serialize(),
                 success: function(response){
                     if(response.status == "success"){
-                        alert("We received your submission, thank you!");
+                        alert("Мы получили вашу заявку!");
                     }else{
                         alert("An error occured: " + response.message);
                     }
