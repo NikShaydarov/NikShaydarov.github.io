@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 8</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div id="start">Заполнение анкеты</div>
-  <div id="popupwrapper">
-    <div id="popup">
-      <div id="exit"></div>
-      <div class="popuptitle">Анкета</div>
-      <form id="my-form" accept-charset="UTF-8" >
-        <div>
-          <span class="titlefield">Введите имя</span><br>
-          <input class="field" type="text" name="name" placeholder="Имя" required><br>
-        </div>
-        <div>
-          <span class="titlefield">Введите почту</span><br>
-          <input class="field" type="email" name="email" placeholder="Почта" required><br>
-        </div>
-        <div>
-          <span class="titlefield">Введите сообщение</span><br>
-          <textarea placeholder="Сообщение" name="message"></textarea><br>
-        </div>
-        <div>
-          <span class="titlefield">Согласие с политикой обработки персональных данных</span>
-          <input type="checkbox" name="agree" required>
-        </div>
-        <div>
-          <input id="submit" type="submit">
-        </div>
 
-      </form>
+    <input id="justbutton" value="Показать попап" type="button" />
+
+    <div hidden id="popup_background">
+        <div id="popup_foreground">
+            <form action="https://formcarry.com/s/iiSFErjCD" accept-charset="UTF-8" id="justform">
+                <div>
+                    <h5>Имя</h5>
+                    <input type="text" name="name" id="nameInput" />
+                </div>
+                <div>
+                    <h5>Электронная почта</h5>
+                    <input type="email" name="email" id="emailInput" />
+                </div>
+                <div>
+                    <h5>Текст</h5>
+                    <input type="text" name="text" id="textInput" />
+                </div>
+                <div>
+                    <h5>Согласны на обработку персональных данных</h5>
+                    <input type="checkbox" name="isPersonalDataAccess" id="personalDataCheckbox" />
+                </div>
+                
+                <input type="submit" value="Отправить" />
+                
+
+            </form>
+            <input id="closebutton" value="Спрятать попап" type="button" />
+        </div>
     </div>
-  
-  </div>
-  <script src="https://carrier.formcarry.com/js/v1.js"></script>
-  <script src="./myscript.js"></script>
-</body>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
